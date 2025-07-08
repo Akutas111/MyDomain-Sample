@@ -9,70 +9,66 @@
 	
 	<style>
 		   body { 
-			 /* Placeholder for your new background image. Fallback to Navy Blue color */
-		     background: url(./background.jpg) no-repeat center center fixed; 
-			 background-color: #1A233A; /* Navy Blue from Brand Book */
+			 background: url(./background.jpg) no-repeat center center fixed; 
+			 background-color: #1A233A;
 		     -webkit-background-size: cover;
 		     -moz-background-size: cover;
 		     -o-background-size: cover;
 		     background-size: cover;
-			 font-family: 'Montserrat', sans-serif; /* Primary Typeface from Brand Book */
-		   }
-
-		   /* Added a style for the logo */
-		   .logo-container {
-			   text-align: center;
-			   padding-top: 50px;
-			   padding-bottom: 20px;
-		   }
-		   .logo {
-			   max-width: 150px;
-			   height: auto;
+			 font-family: 'Montserrat', sans-serif;
 		   }
 		   
 		   .content-container {
 			   max-width: 800px;
-			   margin: 0 auto; /* Center the content */
+			   margin: 0 auto;
+			   padding-top: 70px;
 		   }
 
 		   .content-top {
-			   font-size:24px;
-			   font-weight:700; /* Montserrat Bold */
-			   color: #D4AF37; /* Gold from Brand Book for accents */
+			   font-size:28px; /* Slightly larger main title */
+			   font-weight:700;
+			   color: #D4AF37;
 		       overflow: hidden;
 			   margin-left:40px;
 			   margin-right:40px;
 			   padding: 20px;
 		       background: rgba(0, 0, 0, 0.65);
 		       text-align: center;
-			   text-transform: uppercase; /* Uppercase for headings */
-			   border-bottom: 1px solid rgba(212, 175, 55, 0.4); /* Gold border highlight */
+			   text-transform: uppercase;
+			   border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+		   }
+
+		   /* ADDED: Style for the subtitle */
+		   .content-top .subtitle {
+			   font-size: 16px; /* Smaller font size */
+			   font-weight: 400; /* Regular weight */
+			   text-transform: none; /* Normal case */
+			   margin-top: 5px;
+			   color: #F4F4F4; /* Off-white for subtitle */
 		   }
 		   
 		   .content {			   
-			   color: #F4F4F4; /* Off-White from Brand Book for body text */
+			   color: #F4F4F4;
 			   margin-top:0px;
 			   margin-left:40px;
 			   margin-right:40px;
 			   margin-bottom:40px;
-		       padding: 20px 40px; /* More horizontal padding */
+		       padding: 20px 40px;
 		       background: rgba(0, 0, 0, 0.6);
-		       text-align: left;
-			   font-weight: 400; /* Montserrat Regular */
+		       text-align: center;
+			   font-weight: 400;
 		   }
 	</style>
 </head>
 <body>
-	<div class="logo-container">
-		<img src="./ADIR_Logo.png" alt="ADIR Logo" class="logo">
-	</div>
-
+	
 	<div class="content-container">
-		<div class="content-top">WELCOME TO ADIR</div>
+		<div class="content-top">
+			<p>ADIR</p>
+			<p class="subtitle">Premium Property Management</p>
+		</div>
 		<div class="content">
-			<p>ADIR is a premium property management business.</p> 
-			<p>We are committed to providing unparalleled service and quality.</p>
-			<p>This portal provides secure access to your resources. Please use your company credentials to log in.</p>
+			<p>"Buildings are a tower for the soul"</p>
 		</div>
 	</div>
 	
