@@ -5,9 +5,10 @@
     <title>ADIR - Welcome</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 	
 	<style>
+		   /* CENTERING FIX: These styles force the content to the center of the page. */
 		   body { 
 			 background: url(./background.jpg) no-repeat center center fixed; 
 			 background-color: #1A233A;
@@ -16,35 +17,45 @@
 		     -o-background-size: cover;
 		     background-size: cover;
 			 font-family: 'Montserrat', sans-serif;
+			 
+			 /* Flexbox properties for vertical and horizontal centering */
+			 display: flex;
+			 align-items: center;
+			 justify-content: center;
+			 min-height: 100vh; /* Ensures body takes full screen height */
+			 margin: 0; /* Removes default body margin */
 		   }
 		   
 		   .content-container {
 			   max-width: 800px;
-			   margin: 0 auto;
-			   padding-top: 70px;
+			   width: 90%; /* Ensures container doesn't touch screen edges on mobile */
 		   }
 
 		   .content-top {
-			   font-size:28px; /* Slightly larger main title */
-			   font-weight:700;
-			   color: #D4AF37;
+			   color: #D4AF37; /* Gold color */
 		       overflow: hidden;
 			   margin-left:40px;
 			   margin-right:40px;
-			   padding: 20px;
+			   padding: 25px 20px; /* Increased padding */
 		       background: rgba(0, 0, 0, 0.65);
 		       text-align: center;
-			   text-transform: uppercase;
 			   border-bottom: 1px solid rgba(212, 175, 55, 0.4);
 		   }
 
-		   /* ADDED: Style for the subtitle */
+		   /* FONT CHANGE: Made "ADIR" title bigger and much bolder */
+		   .content-top p:first-child {
+			   font-size: 36px;
+			   font-weight: 900; /* Heavier font weight */
+			   text-transform: uppercase;
+			   margin: 0;
+		   }
+		   
 		   .content-top .subtitle {
-			   font-size: 16px; /* Smaller font size */
-			   font-weight: 400; /* Regular weight */
-			   text-transform: none; /* Normal case */
+			   font-size: 16px;
+			   font-weight: 400;
+			   text-transform: none;
 			   margin-top: 5px;
-			   color: #F4F4F4; /* Off-white for subtitle */
+			   color: #F4F4F4;
 		   }
 		   
 		   .content {			   
@@ -53,10 +64,12 @@
 			   margin-left:40px;
 			   margin-right:40px;
 			   margin-bottom:40px;
-		       padding: 20px 40px;
+		       padding: 30px 40px; /* Increased padding */
 		       background: rgba(0, 0, 0, 0.6);
 		       text-align: center;
 			   font-weight: 400;
+			   /* FONT CHANGE: Increased quote font size */
+			   font-size: 18px;
 		   }
 	</style>
 </head>
